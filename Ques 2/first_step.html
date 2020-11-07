@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Step</title>
+
+    <link rel="stylesheet" href="first_step.css" />
+
+    <script>
+    function validateForm() {
+    var x = document.forms["myForm"]["name"].value;
+    alert(x + " is now a part of First Step family");
+    return false;
+    }
+    function validate() {
+      const firstName = document.getElementById("firstName");
+      const lastName = document.getElementById("lastName");
+      const contact = document.getElementById("contact");
+      if (firstName.value.length === 0) {
+        alert("Please Enter Your First Name");
+        return false;
+      }
+
+      if (lastName.value.length === 0) {
+        alert("Please Enter Your Last Name");
+        return false;
+      }
+
+      if (contact.value.length < 10) {
+        alert("Contact No. can't be less than 10 digits");
+        return false;
+      }}
+    </script>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="toddlers">Care of the Toddlers</h1>
+      <h2 class="heading">First Steps Academy Registration Form</h2>
+    <p>
+      All registrations are received and reviewed in a first come, first serve
+      basis. Upon filling all open spots, additional submissions will be added
+      to our waiting list.
+    </p>
+
+    <h2 class="heading">Before and After school Care Registration</h2>
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+      <div>
+        <label for="Expected Start Date">Expected Start Date</label>
+        <input type="date" />
+      </div>
+      <div>
+        <label for="Expected Departure Date">Expected Departure Date</label>
+        <input type="date" />
+      </div>
+      <div>
+        <label for="School Attending">School Attending</label>
+        <select name="" id="">
+          <option value="Yes">Yes</option>
+          <option value="Yes">No</option>
+        </select>
+      </div>
+      <div>
+        <label for="Grade Attending">Grade Attending</label>
+        <select name="" id="">
+          <option value="Yes">Yes</option>
+          <option value="Yes">No</option>
+        </select>
+      </div>
+      <div>
+        <label for="Pick When">Pick When</label>
+        <select name="" id="">
+          <option value="Morning">Morning</option>
+          <option value="Evening">Evening</option>
+        </select>
+      </div>
+      <div>
+        <label for="Which class are you wanting to register for ?"
+          >Which class are you wanting to register for ?</label>
+        <select name="" id="">
+          <option value="Below 5">Below 5</option>
+          <option value="Below 10">Below 10</option>
+        </select>
+      </div>
+      <div>
+        <label for="What days of the week are looking for care ?"
+          >What days of the week are looking for care ?</label
+        >
+      
+        <textarea id="address" class="address" rows="2" required></textarea>
+      </div>
+
+      <h2 class="heading">Student Information</h2>
+      <div>
+        <label for="name"> First Name:</label>
+        <input id="name" type="text" required/>
+      </div>
+      <div>
+        <label for="lname"> Last Name:</label>
+        <input id="lastname" type="text" required />
+      </div>
+      <br>
+      <div>
+        <label for="gender">Gender :</label>
+        <input type="radio" id="male" name="gender" value="male">Male</input>
+        <input type="radio" id="female" name="gender" value="female">female</input>
+      </div>
+      <br>
+      <div>
+        <label for="Birth
+         Date">Birth Date</label>
+        <input type="date" />
+      </div>
+      <div>
+        <label for="contact">Contact</label>
+       <input type="number" id="contact" required/>
+      </div>
+      <br/>
+      <div>
+        <input type="submit" value="Submit" class="submit">
+      </div>
+    </form>
+    </div>
+  </body>
+</html>

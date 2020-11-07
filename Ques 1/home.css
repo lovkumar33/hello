@@ -1,0 +1,79 @@
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  color: white;
+}
+.top {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgba(6, 19, 164, 0.5),
+    rgba(255, 0, 0, 0)
+  );
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 55px;
+  font-family: "Georgia";
+}
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 20px;
+}
+.outerContainer {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  justify-content: space-around;
+}
+.innerContainer1 {
+  width: 22%;
+}
+.innerContainer2 {
+  width: 22%;
+}
+.innerContainer3 {
+  width: 22%;
+}
+.innerContainer4 {
+  width: 22%;
+}
+.Slide1 {
+  display: none;
+}
+.Slide2 {
+  display: none;
+}
+.Slide3 {
+  display: none;
+}
+.Slide4 {
+  display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

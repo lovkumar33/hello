@@ -1,0 +1,54 @@
+body {
+  background-image: url("temp4.jpg");
+  background-size: cover;
+  font-size: 20px;
+}
+.template4 {
+  margin: 100px auto;
+
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-width: 5px;
+  border-color: rgba(255, 71, 87, 0.4);
+  border-style: inset;
+
+  font-family: "Arial";
+  text-align: left;
+
+  background-color: rgba(135, 143, 144, 0.9);
+
+  height: 70%;
+  width: 30%;
+}
+.options {
+}
+.radioButtons {
+  background-color: #ff0000;
+}
+.alignCenter {
+  text-align: center;
+}
+.adjustMargin {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+button {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #6f1e51;
+  background-color: #6f1e51;
+  color: rgba(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgba(255, 255, 255);
+  color: #6f1e51;
+}

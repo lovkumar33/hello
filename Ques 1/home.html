@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="home.css" />
+  </head>
+  <body>
+    <br /><br />
+    <div class="top">Providing Template forms to customer</div>
+    <br /><br /><br /><br />
+
+    <div class="outerContainer">
+      <div class="innercontainer1">
+        <div class="Slide1 fade">
+          <a href="template1.html"><img src="home1.png" /></a>
+        </div>
+
+        <div class="Slide1 fade">
+          <a href="template2.html"><img src="home2.png" /></a>
+        </div>
+
+        <div class="Slide1 fade">
+          <a href="template3.html"><img src="home3.png" /></a>
+        </div>
+
+        <div class="Slide1 fade">
+          <a href="template4.html"><img src="home4.png" /></a>
+        </div>
+      </div>
+
+      <div class="innercontainer2">
+        <div class="Slide2 fade">
+          <a href="template2.html"><img src="home2.png" /></a>
+        </div>
+
+        <div class="Slide2 fade">
+          <a href="template3.html"><img src="home3.png" /></a>
+        </div>
+
+        <div class="Slide2 fade">
+          <a href="template4.html"><img src="home4.png" /></a>
+        </div>
+
+        <div class="Slide2 fade">
+          <a href="template1.html"><img src="home1.png" /></a>
+        </div>
+      </div>
+
+      <div class="innercontainer3">
+        <div class="Slide3 fade">
+          <a href="template3.html"><img src="home3.png" /></a>
+        </div>
+
+        <div class="Slide3 fade">
+          <a href="template4.html"><img src="home4.png" /></a>
+        </div>
+
+        <div class="Slide3 fade">
+          <a href="template1.html"><img src="home1.png" /></a>
+        </div>
+
+        <div class="Slide3 fade">
+          <a href="template2.html"><img src="home2.png" /></a>
+        </div>
+      </div>
+
+      <div class="innercontainer4">
+        <div class="Slide4 fade">
+          <a href="template4.html"><img src="home4.png" /></a>
+        </div>
+
+        <div class="Slide4 fade">
+          <a href="template1.html"><img src="home1.png" /></a>
+        </div>
+
+        <div class="Slide4 fade">
+          <a href="template2.html"><img src="home2.png" /></a>
+        </div>
+
+        <div class="Slide4 fade">
+          <a href="template3.html"><img src="home3.png" /></a>
+        </div>
+      </div>
+    </div>
+    <script>
+      var Index = 0;
+      slideShowFunction();
+
+      function slideShowFunction() {
+        var i = 0;
+        var slide1 = document.getElementsByClassName("Slide1");
+        var slide2 = document.getElementsByClassName("Slide2");
+        var slide3 = document.getElementsByClassName("Slide3");
+        var slide4 = document.getElementsByClassName("Slide4");
+
+        for (i = 0; i < slide1.length; i++) {
+          slide1[i].style.display = "none";
+          slide2[i].style.display = "none";
+          slide3[i].style.display = "none";
+          slide4[i].style.display = "none";
+        }
+        Index++;
+        if (Index > slide1.length) {
+          Index = 1;
+        }
+
+        slide1[Index - 1].style.display = "block";
+        slide2[Index - 1].style.display = "block";
+        slide3[Index - 1].style.display = "block";
+        slide4[Index - 1].style.display = "block";
+
+        setTimeout(slideShowFunction, 3000);
+      }
+    </script>
+  </body>
+</html>
